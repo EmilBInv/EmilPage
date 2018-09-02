@@ -19,12 +19,12 @@ h2 {
 
 p {
   margin: 0;
-  padding: .5em; }
+  padding: .5em; 
+}
 
 .btn {
   display: inline-block;
   border-radius: 5px;
-  border: 2px solid #05091B;
   color: white;
   text-decoration: none;
   padding: .5em 2em;
@@ -33,9 +33,20 @@ p {
   .btn:hover {
     transform: scale(1);
     padding: .5em 1em;
-    margin: .5em 0;
-    background: #D6D9E7;
-    color: #05091B; }
+    margin: .5em 0; }
+
+a:nth-child(1) {
+  background: linear-gradient(to left, #3B5998, #3B5989);
+}
+a:nth-child(2) {
+  background: linear-gradient(to left top, #fccc63, #8a3ab9);
+}
+a:nth-child(3) {
+  background: linear-gradient(to left, #1DA1F2, #2DA2F1);
+}
+.trav {
+  background: linear-gradient(to left top, #D12525, #EA5454);
+}
 
 /*Header Showcase*/
 #showcase {
@@ -45,7 +56,7 @@ p {
     width: 100%;
     height: 350px;
     position: absolute;
-    background: #333 url(/imgs/DarkPath.jpg);
+    background: #333 url(https://cdn.glitch.com/78c18eed-ec1f-41d5-90d6-30d5d0e4adde%2FDarkPath.jpg?1535847301610);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,10 +71,11 @@ p {
 /* Section A */
 #section-a {
   background: #DDDEE3;
+  text-decoration: none;
   color: #333;
   padding-bottom: 2em; }
   #section-a .content-wrap {
-    padding: 0 1.5em; }
+    padding: 0 1.5em;}
 
 #author {
   margin-top: 1em;
@@ -123,9 +135,6 @@ p {
   #main-footer a {
     color: #D6D9E7; }
 
-@media (min-width: 700px) {
-  .btn {
-    grid-template-columns: repeat(2, 1fr); } }
 
 /* Media Queries - If They Worked... -_- */
 /*
